@@ -1,0 +1,6 @@
+[package]
+name = "lets-rust"
+version = "0.1.0"
+authors = ["Dmitriy Dubson <d.dubson@gmail.com>"]
+
+[dependencies]
