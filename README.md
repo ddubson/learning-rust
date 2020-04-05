@@ -30,3 +30,9 @@ Using Cargo
 `cargo check` - Check if code is compilable
 
 `rustfmt src/*` - lint and autofmt Rust source. [rustfmt](https://github.com/rust-lang/rustfmt)
+
+### CI
+
+#### GitHub Actions
+
+The CI definition file is located in `.github/workflows/rust.yml`
