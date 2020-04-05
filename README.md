@@ -1,3 +1,5 @@
+![Rust](https://github.com/ddubson/rust-scratch/workflows/Rust/badge.svg?branch=master)
+
 # Rust Scratch
 
 - `rustup` - Rust version manager
