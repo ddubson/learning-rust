@@ -38,3 +38,7 @@ Using Cargo
 #### GitHub Actions
 
 The CI definition file is located in `.github/workflows/rust.yml`
+
+## Resources
+
+- [Play with Rust](https://play.rust-lang.org)
