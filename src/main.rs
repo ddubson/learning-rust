@@ -5,6 +5,7 @@ mod functional;
 mod lifetimes;
 mod looping;
 mod pattern_matching;
+mod reference_counter;
 mod structs;
 mod threading;
 mod traits;
@@ -19,8 +20,10 @@ fn main() {
     enums::enums();
     traits::traits();
     traits_2::traits_2();
-    lifetimes::lifetimes();
     traits_2::traits_to_external_structs();
+    lifetimes::lifetimes();
+    reference_counter::reference_counter();
+    reference_counter::atomic_reference_counter();
     threading::threads_and_channels();
     examples_io::guessing_game();
 }
