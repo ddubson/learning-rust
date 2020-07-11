@@ -1,6 +1,6 @@
+use std::sync::mpsc;
 use std::thread;
 use std::time::Duration;
-use std::sync::mpsc;
 
 pub fn threads_and_channels() {
     let (tx, rx) = mpsc::channel();

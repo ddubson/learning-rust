@@ -4,19 +4,20 @@ trait Animal {
 
     fn name(&self) -> &'static str;
 
-    fn talk(&self) { // Traits can have default impls
+    fn talk(&self) {
+        // Traits can have default impls
         println!("{} cannot talk", self.name());
     }
 }
 
 #[derive(Debug)]
 struct Human {
-    name: &'static str
+    name: &'static str,
 }
 
 #[derive(Debug)]
 struct Cat {
-    name: &'static str
+    name: &'static str,
 }
 
 impl Animal for Human {
@@ -68,11 +69,13 @@ pub fn traits_to_external_structs() {
     impl Summable<i32> for Vec<i32> {
         fn sum(&self) -> i32 {
             let mut result: i32 = 0;
-            for x in self { result += *x };
+            for x in self {
+                result += *x
+            }
             result
         }
     }
 
-    let a = vec![1,2,3];
+    let a = vec![1, 2, 3];
     println!("Sum = {}", a.sum());
 }

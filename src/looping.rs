@@ -1,5 +1,6 @@
 fn for_loops() {
-    for x in 1..11 { // for 1 through 10
+    for x in 1..11 {
+        // for 1 through 10
         println!("x is {}", x);
     }
 
@@ -23,7 +24,9 @@ fn infinite_loops() {
     loop {
         y *= 2;
 
-        if y == 1024 { break; }
+        if y == 1024 {
+            break;
+        }
     }
 }
 

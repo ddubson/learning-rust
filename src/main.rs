@@ -1,13 +1,14 @@
+mod basic_types;
+mod enums;
+mod examples_io;
+mod functional;
+mod lifetimes;
+mod looping;
+mod pattern_matching;
+mod structs;
+mod threading;
 mod traits;
 mod traits_2;
-mod basic_types;
-mod functional;
-mod threading;
-mod examples_io;
-mod pattern_matching;
-mod looping;
-mod structs;
-mod enums;
 
 fn main() {
     basic_types::basic_types();
@@ -18,6 +19,7 @@ fn main() {
     enums::enums();
     traits::traits();
     traits_2::traits_2();
+    lifetimes::lifetimes();
     traits_2::traits_to_external_structs();
     threading::threads_and_channels();
     examples_io::guessing_game();
