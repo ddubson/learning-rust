@@ -18,6 +18,7 @@ fn main() {
     enums::enums();
     traits::traits();
     traits_2::traits_2();
+    traits_2::traits_to_external_structs();
     threading::threads_and_channels();
     examples_io::guessing_game();
 }

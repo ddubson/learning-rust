@@ -58,3 +58,21 @@ pub fn traits_2() {
     let c = Cat { name: "JJ" };
     c.talk(); // default impl.
 }
+
+pub fn traits_to_external_structs() {
+    trait Summable<T> {
+        fn sum(&self) -> T;
+    }
+
+    // Add a trait to a vector of 32-bit signed integers
+    impl Summable<i32> for Vec<i32> {
+        fn sum(&self) -> i32 {
+            let mut result: i32 = 0;
+            for x in self { result += *x };
+            result
+        }
+    }
+
+    let a = vec![1,2,3];
+    println!("Sum = {}", a.sum());
+}
