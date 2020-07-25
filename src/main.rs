@@ -10,6 +10,7 @@ mod structs;
 mod threading;
 mod traits;
 mod traits_2;
+mod atomics;
 
 fn main() {
     basic_types::basic_types();
@@ -25,5 +26,6 @@ fn main() {
     reference_counter::reference_counter();
     reference_counter::atomic_reference_counter();
     threading::threads_and_channels();
+    atomics::atomics();
     examples_io::guessing_game();
 }
