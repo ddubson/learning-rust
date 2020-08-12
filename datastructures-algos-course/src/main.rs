@@ -1,9 +1,12 @@
-use crate::person::{Person, Color};
-use crate::mutability_copying_cloning::mutability_copying_cloning;
+mod linked_list;
 
+use crate::linked_list::linked_list_example;
+use crate::mutability_copying_cloning::mutability_copying_cloning;
+use crate::person::{Color, Person};
+
+mod mutability_copying_cloning;
 mod person;
 mod point;
-mod mutability_copying_cloning;
 
 #[derive(Debug)]
 pub enum Res<T, E> {
@@ -21,7 +24,7 @@ fn divide(a: i32, b: i32) -> Res<i32, String> {
 
 fn divide2(a: i32, b: i32) -> Result<i32, String> {
     if b == 0 {
-        return Result::Err("Cannot Divide by Zero".to_string())
+        return Result::Err("Cannot Divide by Zero".to_string());
     }
 
     Result::Ok(a / b)
@@ -30,7 +33,7 @@ fn divide2(a: i32, b: i32) -> Result<i32, String> {
 pub struct Stepper {
     curr: i32,
     step: i32,
-    max: i32
+    max: i32,
 }
 
 impl Iterator for Stepper {
@@ -79,7 +82,11 @@ fn main() {
 
     println!("a = {:?}, b = {:?}", a, b);
 
-    let mut stepper = Stepper { curr: 2, step: 3, max: 15 };
+    let mut stepper = Stepper {
+        curr: 2,
+        step: 3,
+        max: 15,
+    };
     loop {
         match stepper.next() {
             Some(v) => println!("loop {}", v),
@@ -88,4 +95,5 @@ fn main() {
     }
 
     mutability_copying_cloning();
+    linked_list_example();
 }

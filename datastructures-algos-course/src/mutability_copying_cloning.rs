@@ -12,7 +12,7 @@ pub fn mutability_copying_cloning() {
         name: "Jill".to_string(),
         age: 22,
         children: None,
-        fave_color: None
+        fave_color: None,
     };
 
     // ❌❌❌ ERROR! p2 has borrowed p, but we're trying to access it (use of borrowed value)
@@ -27,7 +27,7 @@ pub fn mutability_copying_cloning() {
     // ----
 
     // Point implements the Copy trait, so cloning is implicit for a struct that has primitives
-    let point = Point::new(3,4);
+    let point = Point::new(3, 4);
     let point2 = point;
     println!("point = {:?}, point2 = {:?}", point, point2);
 }

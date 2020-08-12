@@ -1,3 +1,4 @@
+mod atomics;
 mod basic_types;
 mod enums;
 mod examples_io;
@@ -10,7 +11,6 @@ mod structs;
 mod threading;
 mod traits;
 mod traits_2;
-mod atomics;
 
 fn main() {
     basic_types::basic_types();
